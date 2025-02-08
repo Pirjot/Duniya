@@ -1,5 +1,7 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+// @ts-ignore
+import logo from './logo.svg';
 
 const apiKey = process.env.REACT_APP_API_KEY;
 console.log(apiKey);
