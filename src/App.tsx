@@ -1,29 +1,32 @@
-import React from 'react';
-import './App.css';
-// @ts-ignore
-import logo from './logo.svg';
+import * as React from "react";
+import "./App.css";
+import CssBaseline from "@mui/material/CssBaseline";
+import Container from "@mui/material/Container";
+import { DuniyaAppBar } from "./components/root";
+import { MainContent } from "./components/root";
+import { Latest } from "./components/root";
+import { Footer } from "./components/root";
+import AppTheme from "./components/shared/mui/AppTheme";
 
 const apiKey = process.env.REACT_APP_API_KEY;
 console.log(apiKey);
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppTheme>
+      <CssBaseline enableColorScheme />
+
+      <DuniyaAppBar />
+      <Container
+        maxWidth="lg"
+        component="main"
+        sx={{ display: "flex", flexDirection: "column", my: 16, gap: 4 }}
+      >
+        <MainContent />
+        <Latest />
+      </Container>
+      <Footer />
+    </AppTheme>
   );
 }
 

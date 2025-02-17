@@ -6,13 +6,19 @@
     "cra-template": "1.2.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-scripts": "*"
+    "react-scripts": "*",
+    "@mui/material": "*",
+    "@mui/icons-material": "*",
+    "@emotion/styled": "*",
+    "@emotion/react": "*",
+    "markdown-to-jsx": "*"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "fix": "npx prettier src --write && eslint src --ext ts,tsx --fix"
   },
   "eslintConfig": {
     "extends": [
