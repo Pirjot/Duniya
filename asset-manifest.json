@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Duniya/static/css/main.f855e6bc.css",
-    "main.js": "/Duniya/static/js/main.0872f039.js",
+    "main.css": "/Duniya/static/css/main.9fc4c11c.css",
+    "main.js": "/Duniya/static/js/main.a7948adb.js",
     "index.html": "/Duniya/index.html",
-    "main.f855e6bc.css.map": "/Duniya/static/css/main.f855e6bc.css.map",
-    "main.0872f039.js.map": "/Duniya/static/js/main.0872f039.js.map"
+    "main.9fc4c11c.css.map": "/Duniya/static/css/main.9fc4c11c.css.map",
+    "main.a7948adb.js.map": "/Duniya/static/js/main.a7948adb.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.0872f039.js"
+    "static/css/main.9fc4c11c.css",
+    "static/js/main.a7948adb.js"
   ]
 }
