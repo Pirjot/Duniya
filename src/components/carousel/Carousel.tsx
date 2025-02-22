@@ -1,22 +1,44 @@
 import React from "react";
-import Box from "@mui/material/Box";
+import { useTheme } from "@mui/material";
+import BootstrapCarousel from 'react-bootstrap/Carousel';
+
 
 export function Carousel() {
-  // TODO: Follow from here: https://medium.com/@ltomblock/crafting-a-professional-looking-carousel-with-react-and-mui-746a86af0ab0
+  const theme = useTheme();
+
   return (
-    <Box
-      sx={{
-        backgroundColor: "blue",
-        minHeight: "300px",
-        display: "flex",
-        flexDirection: "row",
-        alignItems: "center",
-        gap: 4,
-      }}
-    >
-      <p>Hello World. I am a carousel.</p>
-      <p>Hello World. I am a carousel.</p>
-      <p>Hello World. I am a carousel.</p>
-    </Box>
+      <BootstrapCarousel variant={theme.palette.mode == 'dark' ? 'light' : 'dark'}>
+        {/*interval={4000}*/}
+        <BootstrapCarousel.Item>
+          <div
+            style={{
+              height: '400px',
+              width: '100%'
+            }}
+          >
+            Hello World
+          </div>
+        </BootstrapCarousel.Item>
+        <BootstrapCarousel.Item>
+          <div
+              style={{
+                height: '400px',
+                width: '100%'
+              }}
+          >
+            Hello World
+          </div>
+        </BootstrapCarousel.Item>
+        <BootstrapCarousel.Item>
+          <div
+              style={{
+                height: '400px',
+                width: '100%'
+              }}
+          >
+            Hello World
+          </div>
+        </BootstrapCarousel.Item>
+      </BootstrapCarousel>
   );
 }

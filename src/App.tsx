@@ -1,13 +1,12 @@
+import Box from "@mui/material/Box";
+import Container from "@mui/material/Container";
+import CssBaseline from "@mui/material/CssBaseline";
 import * as React from "react";
 import "./App.css";
-import Box from "@mui/material/Box";
-import CssBaseline from "@mui/material/CssBaseline";
-import Container from "@mui/material/Container";
-import { DuniyaAppBar } from "./components/root";
-import { Footer } from "./components/root";
-import AppTheme from "./components/shared/mui/AppTheme";
-import { Header } from "./components/root/Header";
 import { Duniya } from "./components/duniya";
+import { DuniyaAppBar, Footer } from "./components/root";
+import { Header } from "./components/root/Header";
+import AppTheme from "./components/shared/mui/AppTheme";
 
 const apiKey = process.env.REACT_APP_API_KEY;
 console.log(apiKey);

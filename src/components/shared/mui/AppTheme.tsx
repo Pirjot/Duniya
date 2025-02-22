@@ -1,12 +1,12 @@
-import * as React from "react";
-import { ThemeProvider, createTheme } from "@mui/material/styles";
 import type { ThemeOptions } from "@mui/material/styles";
-import { inputsCustomizations } from "./customizations/inputs";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import * as React from "react";
 import { dataDisplayCustomizations } from "./customizations/dataDisplay";
 import { feedbackCustomizations } from "./customizations/feedback";
+import { inputsCustomizations } from "./customizations/inputs";
 import { navigationCustomizations } from "./customizations/navigation";
 import { surfacesCustomizations } from "./customizations/surfaces";
-import { colorSchemes, typography, shadows, shape } from "./themePrimitives";
+import { colorSchemes, shadows, shape, typography } from "./themePrimitives";
 
 interface AppThemeProps {
   children: React.ReactNode;
@@ -47,7 +47,7 @@ export default function AppTheme(props: AppThemeProps) {
   }
   return (
     <ThemeProvider theme={theme} disableTransitionOnChange>
-      {children}
+        {children}
     </ThemeProvider>
   );
 }

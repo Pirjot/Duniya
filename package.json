@@ -3,22 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "cra-template": "1.2.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-scripts": "*",
-    "@mui/material": "*",
-    "@mui/icons-material": "*",
-    "@emotion/styled": "*",
     "@emotion/react": "*",
-    "markdown-to-jsx": "*"
+    "@emotion/styled": "*",
+    "@mui/icons-material": "*",
+    "@mui/material": "*",
+    "bootstrap": "^5.3.3",
+    "cra-template": "1.2.0",
+    "markdown-to-jsx": "*",
+    "react": "^19.0.0",
+    "react-bootstrap": "^2.10.9",
+    "react-dom": "^19.0.0",
+    "react-scripts": "*"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "fix": "npx prettier src --write && eslint src --ext ts,tsx --fix"
+    "fix": "npx prettier src --write --cache && eslint src --ext ts,tsx --fix"
   },
   "eslintConfig": {
     "extends": [
@@ -44,6 +46,8 @@
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
     "gh-pages": "^6.3.0",
+    "prettier": "^2.7.1",
+    "prettier-plugin-organize-imports": "^3.2.4",
     "typescript": "*"
   },
   "overrides": {

@@ -1,16 +1,16 @@
-import * as React from "react";
-import { alpha, styled } from "@mui/material/styles";
-import Box from "@mui/material/Box";
+import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
+import MenuIcon from "@mui/icons-material/Menu";
 import AppBar from "@mui/material/AppBar";
-import Toolbar from "@mui/material/Toolbar";
+import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-import IconButton from "@mui/material/IconButton";
 import Container from "@mui/material/Container";
 import Divider from "@mui/material/Divider";
-import MenuItem from "@mui/material/MenuItem";
 import Drawer from "@mui/material/Drawer";
-import MenuIcon from "@mui/icons-material/Menu";
-import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
+import IconButton from "@mui/material/IconButton";
+import MenuItem from "@mui/material/MenuItem";
+import { alpha, styled } from "@mui/material/styles";
+import Toolbar from "@mui/material/Toolbar";
+import * as React from "react";
 import ColorModeIconDropdown from "../shared/mui/ColorModeIconDropdown";
 import { SitemarkIcon } from "./SitemarkIcon";
 
@@ -110,9 +110,10 @@ export function DuniyaAppBar() {
       <Container maxWidth="lg">
         <StyledToolbar variant="dense" disableGutters>
           <Box
-            sx={{ flexGrow: 1, display: "flex", alignItems: "center", px: 0 }}
+            sx={{ flexGrow: 1, display: "flex", alignItems: "center", justifyContent: "space-between", px: 0 }}
           >
             <SitemarkIcon />
+            <ColorModeIconDropdown />
           </Box>
           <Box sx={{ display: { xs: "flex", md: "none" }, gap: 1 }}>
             <ColorModeIconDropdown size="medium" />
