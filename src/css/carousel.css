@@ -1,0 +1,16 @@
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+}
+
+.carousel-item {
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.carousel-item-child {
+  height: 400px;
+  width: 100%;
+  gap: 20px;
+  justify-content: center;
+}

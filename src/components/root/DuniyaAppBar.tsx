@@ -110,13 +110,19 @@ export function DuniyaAppBar() {
       <Container maxWidth="lg">
         <StyledToolbar variant="dense" disableGutters>
           <Box
-            sx={{ flexGrow: 1, display: "flex", alignItems: "center", justifyContent: "space-between", px: 0 }}
+            sx={{
+              flexGrow: 1,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+              px: 0,
+            }}
           >
             <SitemarkIcon />
-            <ColorModeIconDropdown />
+            <ColorModeIconDropdown size="medium" />
           </Box>
           <Box sx={{ display: { xs: "flex", md: "none" }, gap: 1 }}>
-            <ColorModeIconDropdown size="medium" />
+            {/*<ColorModeIconDropdown size="medium" />*/}
             {/* Reinsert drawer (small mobile) once available {drawerComponents}*/}
           </Box>
         </StyledToolbar>
